@@ -1,3 +1,21 @@
+# To-Do Notes App
+
+## Description
+
+The To-Do Notes App is designed to help you manage your notes efficiently. You can add new notes, search existing notes, and organize them with a star feature for easy access. Notes can be edited, starred, and deleted, with deleted notes moved to a separate section. The app includes animations for a smooth user experience and allows scrolling to access overflow notes. Deleted notes can be permanently removed with a confirmation popup.
+
+## Features
+
+- **Add Notes:** Easily add new notes to your list.
+- **Search Notes:** Quickly find notes using the search functionality.
+- **Star Notes:** Mark important notes with a star for separate display.
+- **Edit Notes:** Edit the content of existing notes.
+- **Delete Notes:** Move notes to a deleted section; permanently delete notes from there with a confirmation popup.
+- **Star/Unstar Notes:** Add or remove stars from notes to organize them.
+- **Animations:** Smooth animations enhance the user experience.
+- **Scroll Access:** Scroll down to access notes when there are more than fit on the screen.
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
