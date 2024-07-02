@@ -32,17 +32,18 @@ const EditPopup = ({allHeadd,setEditPopupDisplay,editPopupData,popupSaveHandelle
     }
 
   return (
-    <div className={'d-flex flex-column bg-secondary edit-form'}>
-        <div className="d-flex flex-column p-2">
+    <div className={'d-flex flex-column bg-secondary edit-form  ovScroll'}>
+        <div className="d-flex flex-column p-2 pt-0">
         <div className='text-light' style={{position:'absolute',right:20}}>{inputError}</div>
-                <label className="text-info">Headding</label>
-                <textarea value={formHeadding} onChange={(e)=>headdingHandeller(e)}   style={{borderRadius:'10px'}}/>
-                <label className="text-info">Description</label>
-                <textarea value={formDescription} onChange={e=>descriptionHandeller(e)}   style={{borderRadius:'10px'}}/>
             <div className="d-flex flex-row justify-content-between" style={{marginTop:'7px'}}>
                 <button className="btn btn-success" onClick={()=>popupSaveHandeller(editPopupData.dt,formHeadding,formDescription)} disabled={inputError} >Save</button>
                 <button className="btn btn-danger" onClick={()=>setEditPopupDisplay(false)}>Cancel</button>
             </div>
+            <hr/>
+                <label className="text-info">Headding</label>
+                <textarea value={formHeadding} onChange={(e)=>headdingHandeller(e)}   style={{borderRadius:'10px'}}/>
+                <label className="text-info">Description</label>
+                <textarea value={formDescription} onChange={e=>descriptionHandeller(e)}   style={{borderRadius:'10px'}}/>
         </div>
     </div>
   )

@@ -28,6 +28,7 @@ ul li{
   width: 40vw;
   height: 33vh;
   border-radius: 20px;
+  border: 1px solid blue;
 }
 .ml-15{
   margin-left: 15px;
@@ -64,9 +65,15 @@ margin-left: 7vw;
 }
 .edit-form{
   width: 30vw;
+  height: 33vh;
   border-radius: 20px;
   animation: sri 1s ease-in-out;
+  border: 1px solid green;
 }
+.pt-0{
+  padding-top: 0px;
+}
+
 @keyframes sri {
   from {
     opacity: 0;
@@ -87,5 +94,10 @@ margin-left: 7vw;
     opacity: 1;
     transform: translateY(0px)
     
+  }
+}
+@media screen and (min-width:700px) {
+  .responsive{
+    width: 50vw;
   }
 }

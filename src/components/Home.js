@@ -108,7 +108,7 @@ const Home = () => {
   return (
     <>
       <div>
-        <div className=" d-flex flex-row w-50">
+        <div className=" d-flex flex-row  responsive">
           <h2 className="text-dark">Notes</h2>
           <input
             className="widthAuto m-2 inputsearch"
@@ -129,7 +129,7 @@ const Home = () => {
         <InputDataComponent todos={todos}  addTodoHandeller={addTodoHandeller}  mainSearch={mainSearch} setMainSearch={setMainSearch} setPopupDispay={setPopupDispay}/>
         </div>}
       </div>
-      <div className="d-flex  p-1">
+      <div className="d-flex resp-row  p-1">
         <div>
           <ul>
             <li className={all ? "textDecoration" : ""}onClick={(e) => allHandeller(e)}> All ({countAll})</li>
@@ -193,10 +193,11 @@ const Home = () => {
           </div>
         </div>
         {countAll !== 0 ? (<div className="d-flex flex-column justify-content-start ml-7"
-          style={{ position: "fixed", right: "20%", top: "10%" }}>
+          >
             <p>{timeDisplay[0]}</p>
-            <h2 style={{overflow:"auto",width:'300px',height:'200px',overflowWrap:'anywhere'}}>{timeDisplay[1]}</h2>
+            <h2 style={{overflow:"auto",height:'200px',overflowWrap:'anywhere'}}>{timeDisplay[1]}</h2>
           </div>) : ("")}
+          
       </div>
     </>
   );
