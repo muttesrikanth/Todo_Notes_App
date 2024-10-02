@@ -26,7 +26,7 @@ ul li{
 }
 .displayContainer{
   width: 40vw;
-  height: 33vh;
+  /* height: 33vh; */
   border-radius: 20px;
   border: 1px solid blue;
 }
