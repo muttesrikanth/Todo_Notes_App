@@ -27,6 +27,7 @@ ul li{
 .displayContainer{
   width: 40vw;
   /* height: 33vh; */
+  height: 168px;
   border-radius: 20px;
   border: 1px solid blue;
 }
@@ -65,7 +66,8 @@ margin-left: 7vw;
 }
 .edit-form{
   width: 30vw;
-  height: 33vh;
+  height: 166px;
+  bottom: 0;
   border-radius: 20px;
   animation: sri 1s ease-in-out;
   border: 1px solid green;
